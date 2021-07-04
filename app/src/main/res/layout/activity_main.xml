@@ -7,34 +7,119 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/imageButtonGmail"
-        android:layout_width="185dp"
-        android:layout_height="201dp"
-        android:onClick="openApp"
-        android:orientation="vertical"
-        android:scaleType="center"
-        android:src="@drawable/gmail"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.027"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03"></ImageButton>
-
-    <ImageButton
-        android:id="@+id/imageButtonWhatsapp"
-        android:layout_width="185dp"
-        android:layout_height="201dp"
+        android:id="@+id/imageButtonWhatsapp2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:onClick="openWhatsApp"
         android:orientation="vertical"
         android:scaleType="center"
         android:src="@drawable/whatsapp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintHorizontal_bias="0.665"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.03"></ImageButton>
+        app:layout_constraintVertical_bias="0.348"></ImageButton>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Pagamentos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonGmail"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGmail2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="abrirRealCap"
+        android:orientation="vertical"
+        android:radius="50dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348"></ImageButton>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Real Cap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonGmail"
+        app:layout_constraintVertical_bias="0.402" />
+
+    <ImageButton
+        android:id="@+id/imageButtonGmail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:onClick="abrirEmprestimo"
+        android:orientation="vertical"
+        android:radius="50dp"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageButton>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Solicitar\n Empréstimo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.192"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonGmail"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageButton
+        android:id="@+id/imageButtonWhatsapp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:onClick="abrirGestao"
+        android:orientation="vertical"
+        android:scaleType="center"
+        android:src="@drawable/whatsapp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"></ImageButton>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Gestão"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.665"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonGmail"
+        app:layout_constraintVertical_bias="0.023" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
