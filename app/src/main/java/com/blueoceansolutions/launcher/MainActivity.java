@@ -1,8 +1,10 @@
 package com.blueoceansolutions.launcher;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
@@ -10,6 +12,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,41 +24,38 @@ public class MainActivity extends AppCompatActivity {
         listar();
     }
 
+    public void abrirApp(View view, String packageNameToOpen){
+        try{
+            Intent intent;
+            new Intent(Intent.ACTION_MAIN);
+            PackageManager managerClock = getPackageManager();
+            intent = managerClock.getLaunchIntentForPackage(packageNameToOpen);
+            intent.addCategory(Intent.CATEGORY_LAUNCHER);
+
+            startActivity(intent);
+        }catch(Exception E){
+            new AlertDialog.Builder(view.getContext())
+                    .setTitle("Erro")
+                    .setMessage("Erro ao tentar abrir aplicativo, verifique se ele está instalado no POS!")
+                    .setPositiveButton(android.R.string.yes, null )
+                    .show();
+        }
+    }
+
     public void abrirEmprestimo(View view){
-        Intent intent;
-        new Intent(Intent.ACTION_MAIN);
-        PackageManager managerClock = getPackageManager();
-        intent = managerClock.getLaunchIntentForPackage("com.blueoceansolutions.gerenciadordeemprestimo");
-        intent.addCategory(Intent.CATEGORY_LAUNCHER);
-        startActivity(intent);
+        abrirApp(view,"com.blueoceansolutions.gerenciadordeemprestimo");
     }
 
     public void abrirGestao(View view){
-        Intent intent;
-        new Intent(Intent.ACTION_MAIN);
-        PackageManager managerClock = getPackageManager();
-        intent = managerClock.getLaunchIntentForPackage("com.blueoceansolutions.gerenciadordeemprestimo");
-        intent.addCategory(Intent.CATEGORY_LAUNCHER);
-        startActivity(intent);
+        abrirApp(view,"com.blueoceansolutions.gerenciadordeemprestimo");
     }
 
     public void abrirRealCap(View view){
-        Intent intent;
-        new Intent(Intent.ACTION_MAIN);
-        PackageManager managerClock = getPackageManager();
-        intent = managerClock.getLaunchIntentForPackage("br.com.realcapreal.realcapvendas");
-        intent.addCategory(Intent.CATEGORY_LAUNCHER);
-        startActivity(intent);
+        abrirApp(view,"br.com.realcapreal.realcapvendas");
     }
-    
 
     public void abrirPagamento(View view){
-        Intent intent;
-        new Intent(Intent.ACTION_MAIN);
-        PackageManager managerClock = getPackageManager();
-        intent = managerClock.getLaunchIntentForPackage("com.blueoceansolutions.gerenciadordeemprestimo");
-        intent.addCategory(Intent.CATEGORY_LAUNCHER);
-        startActivity(intent);
+        abrirApp(view,"com.blueoceansolutions.gerenciadordeemprestimo");
     }
 
     private void listar(){
