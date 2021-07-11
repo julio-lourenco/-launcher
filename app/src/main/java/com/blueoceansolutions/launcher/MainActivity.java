@@ -8,9 +8,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,6 +23,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageButton buttonPagamentos = (ImageButton)  findViewById(R.id.abrirPagamentosButton);
+        buttonPagamentos.setImageDrawable(getIcon("br.com.celerpay.tkpppos"));
+
+        ImageButton buttonRealCap = (ImageButton)  findViewById(R.id.abrirRealCapButton);
+        buttonRealCap.setImageDrawable(getIcon("br.com.realcapreal.realcapvendas"));
+
         listar();
     }
 
@@ -56,6 +65,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void abrirPagamento(View view){
         abrirApp(view,"br.com.celerpay.tkpppos");
+    }
+
+    private Drawable getIcon(String packageName){
+        final PackageManager pm = getPackageManager();
+        Drawable icon = null;
+        List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
+
+        for (ApplicationInfo packageInfo : packages) {
+            if(packageName.equals(packageInfo.packageName)){
+                icon = packageInfo.loadIcon(pm);
+            }
+        }
+        return icon;
     }
 
     private void listar(){
