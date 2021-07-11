@@ -7,13 +7,12 @@
     tools:context=".MainActivity">
 
     <ImageButton
-        android:id="@+id/abrirPagamentos"
+        android:id="@+id/abrirPagamentosButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:onClick="abrirPagamento"
         android:orientation="vertical"
         android:scaleType="center"
-        android:src="@drawable/whatsapp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.858"
@@ -32,11 +31,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonGmail"
-        app:layout_constraintVertical_bias="0.578" />
+        app:layout_constraintTop_toBottomOf="@+id/abrirPagamentosButton"
+        app:layout_constraintVertical_bias="0.012" />
 
     <ImageButton
-        android:id="@+id/imageButtonGmail2"
+        android:id="@+id/abrirRealCapButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:onClick="abrirRealCap"
@@ -61,11 +60,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonGmail"
-        app:layout_constraintVertical_bias="0.592" />
+        app:layout_constraintTop_toBottomOf="@+id/abrirRealCapButton"
+        app:layout_constraintVertical_bias="0.012
+
+
+" />
 
     <ImageButton
-        android:id="@+id/imageButtonGmail"
+        android:id="@+id/abrirEmprestimoButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="16dp"
@@ -76,7 +78,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.195"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageButton>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"></ImageButton>
 
     <TextView
         android:id="@+id/textView"
@@ -87,19 +90,19 @@
         android:text="Solicitar\n Empréstimo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintHorizontal_bias="0.195
+"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonGmail"
+        app:layout_constraintTop_toBottomOf="@+id/abrirEmprestimoButton"
         app:layout_constraintVertical_bias="0.012" />
 
     <ImageButton
-        android:id="@+id/imageButtonWhatsapp"
+        android:id="@+id/AbrirGestaoButton"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:onClick="abrirGestao"
         android:orientation="vertical"
         android:scaleType="center"
-        android:src="@drawable/whatsapp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.858"
@@ -118,8 +121,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonGmail"
-        app:layout_constraintVertical_bias="0.011" />
+        app:layout_constraintTop_toBottomOf="@+id/AbrirGestaoButton"
+        app:layout_constraintVertical_bias="0.012" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

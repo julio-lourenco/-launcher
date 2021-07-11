@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void abrirPagamento(View view){
-        abrirApp(view,"com.blueoceansolutions.gerenciadordeemprestimo");
+        abrirApp(view,"br.com.celerpay.tkpppos");
     }
 
     private void listar(){
