@@ -23,13 +23,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ImageButton buttonPagamentos = (ImageButton)  findViewById(R.id.abrirPagamentosButton);
-        buttonPagamentos.setImageDrawable(getIcon("br.com.celerpay.tkpppos"));
-
-        ImageButton buttonRealCap = (ImageButton)  findViewById(R.id.abrirRealCapButton);
-        buttonRealCap.setImageDrawable(getIcon("br.com.realcapreal.realcapvendas"));
-
         listar();
     }
 
@@ -51,23 +44,18 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void abrirEmprestimo(View view){
-        abrirApp(view,"com.blueoceansolutions.gerenciadordeemprestimo");
-    }
-
-    public void abrirGestao(View view){
-        abrirApp(view,"com.blueoceansolutions.gerenciadordeemprestimo");
-    }
-
+    public void abrirEmprestimo(View view){ abrirApp(view,"com.blueoceansolutions.gerenciadordeemprestimo"); }
+    public void abrirGestao(View view){ abrirApp(view,"com.blueoceansolutions.gerenciadordeemprestimo"); }
     public void abrirRealCap(View view){
         abrirApp(view,"br.com.realcapreal.realcapvendas");
     }
-
     public void abrirPagamento(View view){
         abrirApp(view,"br.com.celerpay.tkpppos");
     }
 
-    private Drawable getIcon(String packageName){
+   /*
+        NO longer necessary
+        private Drawable getIcon(String packageName){
         final PackageManager pm = getPackageManager();
         Drawable icon = null;
         List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
@@ -78,17 +66,14 @@ public class MainActivity extends AppCompatActivity {
             }
         }
         return icon;
-    }
+    }*/
 
     private void listar(){
         final PackageManager pm = getPackageManager();
-//get a list of installed apps.
         List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
 
         for (ApplicationInfo packageInfo : packages) {
             Log.d(ContentValues.TAG, packageInfo.loadLabel(pm)+":" + packageInfo.packageName);
-            /*Log.d(ContentValues.TAG, "Source dir : " + packageInfo.sourceDir);
-            Log.d(ContentValues.TAG, "Launch Activity :" + pm.getLaunchIntentForPackage(packageInfo.packageName));*/
         }
     }
 

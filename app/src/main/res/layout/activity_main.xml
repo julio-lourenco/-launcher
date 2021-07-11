@@ -4,129 +4,138 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_app"
     tools:context=".MainActivity">
 
     <ImageButton
         android:id="@+id/abrirPagamentosButton"
-        android:layout_width="100dp"
+        android:layout_width="120dp"
         android:layout_height="100dp"
-        android:background="@null"
+        android:background="@drawable/vendas"
         android:onClick="abrirPagamento"
         android:orientation="vertical"
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521"></ImageButton>
+        app:layout_constraintVertical_bias="0.005"></ImageButton>
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="100dp"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:foregroundGravity="center"
         android:gravity="center"
-        android:text="Pagamentos"
+        android:text="Vendas"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/abrirPagamentosButton"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintVertical_bias="0
+" />
 
     <ImageButton
         android:id="@+id/abrirRealCapButton"
-        android:layout_width="100dp"
+        android:layout_width="120dp"
         android:layout_height="100dp"
-        android:background="@null"
+        android:background="@drawable/logo_real_cap"
         android:onClick="abrirRealCap"
         android:orientation="vertical"
         android:radius="50dp"
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521"></ImageButton>
+        app:layout_constraintVertical_bias="0.005"></ImageButton>
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="100dp"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="Real Cap"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/abrirRealCapButton"
-        app:layout_constraintVertical_bias="0.012
-
-
-" />
-
-    <ImageButton
-        android:id="@+id/abrirEmprestimoButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="16dp"
-        android:background="@null"
-        android:onClick="abrirEmprestimo"
-        android:orientation="vertical"
-        android:radius="50dp"
-        android:scaleType="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.195"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"></ImageButton>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:text="Solicitar\n Empréstimo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.195
-"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/abrirEmprestimoButton"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/AbrirGestaoButton"
-        android:layout_width="100dp"
+        android:layout_width="120dp"
         android:layout_height="100dp"
-        android:background="@null"
+        android:background="@drawable/gestao_negocios"
         android:onClick="abrirGestao"
         android:orientation="vertical"
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"></ImageButton>
+        app:layout_constraintVertical_bias="0.689"></ImageButton>
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="100dp"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:foregroundGravity="center"
         android:gravity="center"
         android:text="Gestão"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintHorizontal_bias="0.945"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AbrirGestaoButton"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintVertical_bias="0" />
+
+    <ImageButton
+        android:id="@+id/abrirEmprestimoButton"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:background="@drawable/emprestimo_icon"
+        android:onClick="abrirEmprestimo"
+        android:orientation="vertical"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.689"></ImageButton>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.DeviceDefault.Light.TextView"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="Solicitar\n Empréstimo"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/abrirEmprestimoButton"
+        app:layout_constraintVertical_bias="0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
