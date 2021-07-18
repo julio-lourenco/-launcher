@@ -1,141 +1,240 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_app"
+    android:background="#FCA41C"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/abrirPagamentosButton"
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:background="@drawable/vendas"
-        android:onClick="abrirPagamento"
-        android:orientation="vertical"
-        android:scaleType="center"
+
+
+    <View
+        android:id="@+id/image_16"
+        android:layout_width="169dp"
+        android:layout_height="105dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/image_16"
+        android:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ellipse_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_1"
+        app:layout_constraintTop_toTopOf="@+id/ellipse_1"
+        app:layout_constraintVertical_bias="0.376" />
+
+    <View
+        android:id="@+id/ellipse_1"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/ellipse_1"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:id="@+id/rectangle_1"
+        android:layout_width="92dp"
+        android:layout_height="94dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_1"
+        android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005"></ImageButton>
+        app:layout_constraintVertical_bias="0.328" />
 
-    <TextView
-        android:id="@+id/textView4"
-        style="@android:style/Widget.DeviceDefault.Light.TextView"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:text="Vendas"
-        android:textColor="@color/white"
-        android:textSize="16sp"
+    <View
+        android:id="@+id/image_13"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/image_13"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+        app:layout_constraintVertical_bias="0.34"
+        android:elevation="100dp"
+        android:onClick="abrirPagamento"/>
+
+
+    <View
+        android:id="@+id/rectangle_2"
+        android:layout_width="92dp"
+        android:layout_height="94dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_1"
+        android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/abrirPagamentosButton"
-        app:layout_constraintVertical_bias="0
-" />
-
-    <ImageButton
-        android:id="@+id/abrirRealCapButton"
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:background="@drawable/logo_real_cap"
-        android:onClick="abrirRealCap"
-        android:orientation="vertical"
-        android:radius="50dp"
-        android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005"></ImageButton>
+        app:layout_constraintVertical_bias="0.328" />
 
-    <TextView
-        android:id="@+id/textView3"
-        style="@android:style/Widget.DeviceDefault.Light.TextView"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:text="Real Cap"
-        android:textColor="@color/white"
-        android:textSize="16sp"
+
+    <View
+        android:id="@+id/image_12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/image_12"
+        android:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_2"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_2"
+        app:layout_constraintVertical_bias="0.34"
+        android:onClick="abrirRealCap"/>
+
+    <View
+        android:id="@+id/rectangle_3"
+        android:layout_width="92dp"
+        android:layout_height="94dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_3"
+        android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/abrirRealCapButton"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <ImageButton
-        android:id="@+id/AbrirGestaoButton"
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:background="@drawable/gestao_negocios"
-        android:onClick="abrirGestao"
-        android:orientation="vertical"
-        android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.689"></ImageButton>
-
-    <TextView
-        android:id="@+id/textView2"
-        style="@android:style/Widget.DeviceDefault.Light.TextView"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:text="Gestão"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AbrirGestaoButton"
-        app:layout_constraintVertical_bias="0" />
-
-    <ImageButton
-        android:id="@+id/abrirEmprestimoButton"
-        android:layout_width="120dp"
-        android:layout_height="100dp"
-        android:background="@drawable/emprestimo_icon"
-        android:onClick="abrirEmprestimo"
-        android:orientation="vertical"
-        android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.871"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.689"></ImageButton>
+        app:layout_constraintVertical_bias="0.328" />
+
+    <View
+        android:id="@+id/image_10"
+        android:layout_width="65dp"
+        android:layout_height="51dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/image_10"
+        android:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_3"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_3"
+        app:layout_constraintVertical_bias="0.369"
+        android:onClick="abrirGestao"/>
+
+
+    <View
+        android:id="@+id/rectangle_4"
+        android:layout_width="92dp"
+        android:layout_height="94dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/rectangle_4"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577" />
+
+    <View
+        android:id="@+id/image_11"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/image_11"
+        android:elevation="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_4"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_4"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_4"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_4"
+        app:layout_constraintVertical_bias="0.369"
+        android:onClick="abrirEmprestimo"/>
 
     <TextView
         android:id="@+id/textView"
-        style="@android:style/Widget.DeviceDefault.Light.TextView"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:foregroundGravity="center"
+        android:layout_width="92dp"
+        android:layout_height="25dp"
         android:gravity="center"
-        android:text="Solicitar\n Empréstimo"
-        android:textColor="@color/white"
-        android:textSize="16sp"
+        android:paddingLeft="12dp"
+        android:text="Vendas"
+        android:textColor="#444444"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/abrirEmprestimoButton"
-        app:layout_constraintVertical_bias="0" />
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="113dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingBottom="10dp"
+        android:text="Título de\n Capitalização"
+        android:textColor="#444444"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:text="Gestão"
+        android:textColor="#444444"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="125dp"
+        android:layout_height="38dp"
+        android:paddingLeft="12dp"
+        android:text="Empréstimos"
+        android:textColor="#444444"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_4"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+    <!-- Rectangle 16 -->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
