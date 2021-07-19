@@ -51,8 +51,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328" />
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_1"
+        app:layout_constraintVertical_bias="0.078" />
 
     <View
         android:id="@+id/image_13"
@@ -83,9 +83,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328" />
-
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_1"
+        app:layout_constraintVertical_bias="0.078" />
 
     <View
         android:id="@+id/image_12"
@@ -113,10 +112,10 @@
         android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintHorizontal_bias="0.909"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328" />
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_1"
+        app:layout_constraintVertical_bias="0.078" />
 
     <View
         android:id="@+id/image_10"
@@ -147,8 +146,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.131"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.577" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.143" />
 
     <View
         android:id="@+id/image_11"
