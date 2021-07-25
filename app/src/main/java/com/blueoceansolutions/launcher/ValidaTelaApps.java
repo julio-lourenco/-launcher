@@ -23,8 +23,6 @@ public class ValidaTelaApps extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.valida_tela_apps);
-
-        //editSenha = findViewById(R.id.editSenha);
     }
 
     public void abrirApps(View view) {
@@ -35,8 +33,6 @@ public class ValidaTelaApps extends AppCompatActivity {
         System.out.println("Senha MD5 do Edit: " +  getHashMd5(editSenha.getText().toString()));
 
         System.out.println("Senha do app: "  + senha);
-
-
 
         if(editSenhaMD5.equals(senha)) {
             Intent intent = new Intent(this, ListaDeTodosOsApps.class);

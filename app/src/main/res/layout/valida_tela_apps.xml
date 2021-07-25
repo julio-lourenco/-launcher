@@ -71,7 +71,7 @@ tools:context=".ValidaTelaApps">
 
     <EditText
         android:id="@+id/editSenha"
-        android:layout_width="360dp"
+        android:layout_width="300dp"
         android:layout_height="45dp"
         android:ems="10"
         android:hint="Digite a Senha"
@@ -87,7 +87,7 @@ tools:context=".ValidaTelaApps">
 
     <Button
         android:id="@+id/btnEntrar"
-        android:layout_width="360dp"
+        android:layout_width="300dp"
         android:layout_height="60dp"
         android:onClick="abrirApps"
         android:text="Entrar"
