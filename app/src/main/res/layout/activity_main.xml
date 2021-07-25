@@ -139,7 +139,7 @@
         android:layout_alignParentTop="true"
         android:background="@drawable/all_apps_icone"
         android:elevation="100dp"
-        android:onClick="abrirRealCap"
+        android:onClick="abrirValidaApps"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_"
         app:layout_constraintHorizontal_bias="0.464"

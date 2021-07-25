@@ -4,17 +4,13 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ImageButton;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -51,6 +47,12 @@ public class MainActivity extends AppCompatActivity {
     }
     public void abrirPagamento(View view){
         abrirApp(view,"br.com.celerpay.tkpppos");
+    }
+
+
+    public void abrirValidaApps(View view) {
+        Intent intent = new Intent(this, ValidaTelaApps.class);
+        startActivity(intent);
     }
 
    /*
