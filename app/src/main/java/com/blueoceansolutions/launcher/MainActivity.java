@@ -45,9 +45,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void abrirEmprestimo(View view){ abrirApp(view,"com.blueoceansolutions.gerenciadordeemprestimo"); }
-    public void abrirGestao(View view){ abrirApp(view,"com.blueoceansolutions.gerenciadordeemprestimo"); }
+    public void abrirGestao(View view){ abrirApp(view,"br.com.ellotech"); }
     public void abrirRealCap(View view){
-        abrirApp(view,"br.com.realcapreal.realcapvendas");
+        abrirApp(view,"br.net.realcap");
     }
     public void abrirPagamento(View view){
         abrirApp(view,"br.com.celerpay.tkpppos");
