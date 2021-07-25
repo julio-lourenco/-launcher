@@ -6,53 +6,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FCA41C"
+    android:background="#412250"
     tools:context=".MainActivity">
 
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="suporte@realpay.com"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_2"
+        app:layout_constraintVertical_bias="0.984" />
 
     <View
         android:id="@+id/image_16"
-        android:layout_width="169dp"
-        android:layout_height="105dp"
+        android:layout_width="190dp"
+        android:layout_height="122dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/image_16"
+        android:background="@drawable/real_pay_logo"
         android:elevation="100dp"
         app:layout_constraintBottom_toBottomOf="@+id/ellipse_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/ellipse_1"
         app:layout_constraintTop_toTopOf="@+id/ellipse_1"
-        app:layout_constraintVertical_bias="0.376" />
+        app:layout_constraintVertical_bias="0.1" />
 
     <View
         android:id="@+id/ellipse_1"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
+        android:layout_height="160dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/ellipse_1"
-        android:elevation="10dp"
+        android:background="@drawable/background_topo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.00"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp" />
 
     <View
         android:id="@+id/rectangle_1"
-        android:layout_width="92dp"
-        android:layout_height="94dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/rectangle_1"
+        android:background="@drawable/background_icone"
         android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.10"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ellipse_1"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353" />
+
 
     <View
         android:id="@+id/image_13"
@@ -60,31 +76,45 @@
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/image_13"
+        android:background="@drawable/pagamento_icone"
+        android:elevation="100dp"
+        android:onClick="abrirPagamento"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
-        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="@+id/rectangle_1"
         app:layout_constraintTop_toTopOf="@+id/rectangle_1"
-        app:layout_constraintVertical_bias="0.34"
-        android:elevation="100dp"
-        android:onClick="abrirPagamento"/>
-
+        app:layout_constraintVertical_bias="0.54" />
 
     <View
         android:id="@+id/rectangle_2"
-        android:layout_width="92dp"
-        android:layout_height="94dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/rectangle_1"
+        android:background="@drawable/background_icone"
         android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ellipse_1"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintVertical_bias="0.407" />
+
+    <View
+        android:id="@+id/rectangle_"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_icone"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ellipse_1"
+        app:layout_constraintVertical_bias="0.407" />
 
     <View
         android:id="@+id/image_12"
@@ -92,145 +122,192 @@
         android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/image_12"
+        android:background="@drawable/capitalizacao_icone"
         android:elevation="100dp"
+        android:onClick="abrirRealCap"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_2"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_2"
-        app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="@+id/rectangle_2"
         app:layout_constraintTop_toTopOf="@+id/rectangle_2"
-        app:layout_constraintVertical_bias="0.34"
-        android:onClick="abrirRealCap"/>
+        app:layout_constraintVertical_bias="0.54" />
+
+    <View
+        android:id="@+id/image_"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/all_apps_icone"
+        android:elevation="100dp"
+        android:onClick="abrirRealCap"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_2"
+        app:layout_constraintVertical_bias="0.55" />
 
     <View
         android:id="@+id/rectangle_3"
-        android:layout_width="92dp"
-        android:layout_height="94dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/rectangle_3"
+        android:background="@drawable/background_icone"
         android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ellipse_1"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353
+" />
+
 
     <View
         android:id="@+id/image_10"
-        android:layout_width="65dp"
-        android:layout_height="51dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/image_10"
+        android:background="@drawable/gestao_icone"
         android:elevation="100dp"
+        android:onClick="abrirGestao"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_3"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_3"
-        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="@+id/rectangle_3"
         app:layout_constraintTop_toTopOf="@+id/rectangle_3"
-        app:layout_constraintVertical_bias="0.369"
-        android:onClick="abrirGestao"/>
-
+        app:layout_constraintVertical_bias="0.551" />
 
     <View
         android:id="@+id/rectangle_4"
-        android:layout_width="92dp"
-        android:layout_height="94dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/rectangle_4"
+        android:background="@drawable/background_icone"
         android:elevation="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.896"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.143" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353" />
 
     <View
         android:id="@+id/image_11"
-        android:layout_width="52dp"
-        android:layout_height="48dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:background="@drawable/image_11"
+        android:background="@drawable/emprestimo_icone"
         android:elevation="100dp"
+        android:onClick="abrirEmprestimo"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_4"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_4"
-        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="@+id/rectangle_4"
         app:layout_constraintTop_toTopOf="@+id/rectangle_4"
-        app:layout_constraintVertical_bias="0.369"
-        android:onClick="abrirEmprestimo"/>
+        app:layout_constraintVertical_bias="0.55" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="92dp"
-        android:layout_height="25dp"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
         android:gravity="center"
-        android:paddingLeft="12dp"
         android:text="Vendas"
-        android:textColor="#444444"
-        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.10"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rectangle_1"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="113dp"
-        android:layout_height="51dp"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
         android:gravity="center"
-        android:paddingLeft="12dp"
         android:paddingBottom="10dp"
-        android:text="Título de\n Capitalização"
-        android:textColor="#444444"
+        android:text="Capitalização"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="Apps"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rectangle_2"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="92dp"
+        android:layout_width="90dp"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingLeft="12dp"
         android:text="Gestão"
-        android:textColor="#444444"
-        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.871"
+        app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rectangle_3"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="125dp"
-        android:layout_height="38dp"
-        android:paddingLeft="12dp"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
         android:text="Empréstimos"
-        android:textColor="#444444"
-        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintHorizontal_bias="0.896"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/rectangle_4"
         app:layout_constraintVertical_bias="0.0" />
 
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="120dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="112dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="(62) 3333-3333"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ellipse_1"
+        app:layout_constraintTop_toTopOf="@+id/image_16"
+        app:layout_constraintVertical_bias="0.016" />
 
 
     <!-- Rectangle 16 -->
