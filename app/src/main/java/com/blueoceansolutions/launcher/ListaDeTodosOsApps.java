@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -25,6 +26,8 @@ public class ListaDeTodosOsApps extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.lista_de_todos_os_apps);
+
+
 
         apps = new ArrayList<>();
         getApps();
@@ -83,4 +86,24 @@ public class ListaDeTodosOsApps extends AppCompatActivity {
         }
     }
 
+    public void abrirApp(View view, String packageNameToOpen){
+        try{
+            Intent intent;
+            new Intent(Intent.ACTION_MAIN);
+            PackageManager managerClock = getPackageManager();
+            intent = managerClock.getLaunchIntentForPackage(packageNameToOpen);
+            intent.addCategory(Intent.CATEGORY_LAUNCHER);
+
+            startActivity(intent);
+        }catch(Exception E){
+            new AlertDialog.Builder(view.getContext())
+                    .setTitle("Erro")
+                    .setMessage("Erro ao tentar abrir aplicativo, verifique se ele está instalado no POS!")
+                    .setPositiveButton(android.R.string.yes, null )
+                    .show();
+        }
+    }
+
+    public void abrirConfig(View view){abrirApp(view,"com.android.settings");
+    }
 }
