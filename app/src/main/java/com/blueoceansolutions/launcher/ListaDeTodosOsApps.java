@@ -42,7 +42,8 @@ public class ListaDeTodosOsApps extends AppCompatActivity {
         });
     }
 
-    private void getApps(){
+/*
+  private void getApps(){
         PackageManager pm = getPackageManager();
         List<ApplicationInfo> packages = pm.getInstalledApplications(PackageManager.GET_META_DATA);
 
@@ -50,6 +51,28 @@ public class ListaDeTodosOsApps extends AppCompatActivity {
             apps.add(new Item(pm.getApplicationLabel(packageInfo).toString(),
                     packageInfo.packageName,
                     pm.getApplicationIcon(packageInfo)));
+        }
+    }
+
+ */
+
+    private void getApps() {
+        PackageManager pm = getPackageManager();
+        List<ApplicationInfo> packages = pm.getInstalledApplications(0);
+
+        for (ApplicationInfo packageInfo : packages) {
+
+            if((packageInfo.flags & ApplicationInfo.FLAG_UPDATED_SYSTEM_APP) != 0) {
+                apps.add(new Item(pm.getApplicationLabel(packageInfo).toString(),
+                        packageInfo.packageName,
+                        pm.getApplicationIcon(packageInfo)));
+
+            } else if ((packageInfo.flags & ApplicationInfo.FLAG_SYSTEM) != 0) {
+            } else {
+                apps.add(new Item(pm.getApplicationLabel(packageInfo).toString(),
+                        packageInfo.packageName,
+                        pm.getApplicationIcon(packageInfo)));
+            }
         }
     }
 
