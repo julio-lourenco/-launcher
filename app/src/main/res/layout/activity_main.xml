@@ -50,7 +50,7 @@
         android:layout_height="30dp"
         android:gravity="center"
         android:paddingBottom="10dp"
-        android:text="suporte@realpay.com"
+        android:text="suporte@realpay.net.br"
         android:textColor="#ffffff"
         android:textSize="16sp"
         android:textStyle="bold"
