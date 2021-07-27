@@ -15,7 +15,7 @@ import java.security.NoSuchAlgorithmException;
 
 public class ValidaTelaApps extends AppCompatActivity {
 
-    private String senha = getHashMd5("1234"); // senha de teste haha
+    private String senha = getHashMd5("real9876"); // senha de teste haha
     private EditText editSenha;
     private Button btnEntrar;
 
