@@ -9,6 +9,23 @@
     android:background="#412250"
     tools:context=".ListaDeTodosOsApps">
 
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="Whatsapp: (62) 98152-5804"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListView"
+        app:layout_constraintVertical_bias="0.983" />
+
     <View
         android:id="@+id/image_16"
         android:layout_width="190dp"
@@ -38,20 +55,20 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="120dp"
+        android:layout_width="153dp"
         android:layout_height="20dp"
         android:layout_marginTop="112dp"
-        android:textColor="#ffffff"
+        android:elevation="100dp"
         android:gravity="center"
+        android:text="(62) 3996 - 5983"
+        android:textColor="#ffffff"
         android:textSize="16sp"
         android:textStyle="bold"
-        android:text="(62) 3333-3333"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/ellipse_1"
         app:layout_constraintTop_toTopOf="@+id/image_16"
-        app:layout_constraintVertical_bias="0.016"
-        android:elevation="100dp"/>
+        app:layout_constraintVertical_bias="0.016" />
 
     <LinearLayout
         android:id="@+id/listView"
@@ -84,8 +101,8 @@
         android:layout_height="370dp"
         app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintTop_toBottomOf="@+id/ellipse_1"
-        app:layout_constraintVertical_bias="0.66"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.514"
+        tools:layout_editor_absoluteX="16dp" />
 
     <ImageButton
         android:id="@+id/imageButton"
