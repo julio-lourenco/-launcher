@@ -6,7 +6,11 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.BatteryManager;
 import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -32,6 +36,24 @@ public class ValidaTelaApps extends AppCompatActivity {
         setContentView(R.layout.valida_tela_apps);
 
         txtBateria = findViewById(R.id.txtBateria);
+        editSenha = findViewById(R.id.editSenha);
+
+        hideSystemUI();
+
+        editSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                hideSystemUI();
+            }
+        });
+
+        editSenha.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                hideSystemUI();
+                return false;
+            }
+        });
     }
 
     @Override
@@ -44,7 +66,7 @@ public class ValidaTelaApps extends AppCompatActivity {
     }
 
     public void abrirApps(View view) {
-        editSenha = findViewById(R.id.editSenha);
+        //editSenha = findViewById(R.id.editSenha);
         String editSenhaMD5 = getHashMd5(editSenha.getText().toString());
 
         System.out.println("Senha do Edit: " + editSenha.getText().toString());
@@ -77,7 +99,7 @@ public class ValidaTelaApps extends AppCompatActivity {
         // Or for "sticky immersive," replace it with SYSTEM_UI_FLAG_IMMERSIVE_STICKY
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_IMMERSIVE
+                          View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }

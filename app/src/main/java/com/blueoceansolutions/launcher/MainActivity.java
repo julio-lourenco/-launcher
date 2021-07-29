@@ -13,6 +13,7 @@ import android.content.pm.PackageManager;
 import android.os.BatteryManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.TextView;
 
@@ -120,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
         // Or for "sticky immersive," replace it with SYSTEM_UI_FLAG_IMMERSIVE_STICKY
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_IMMERSIVE
+                          View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }

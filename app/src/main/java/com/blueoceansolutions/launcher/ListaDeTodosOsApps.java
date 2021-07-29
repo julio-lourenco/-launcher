@@ -130,7 +130,7 @@ public class ListaDeTodosOsApps extends AppCompatActivity {
         // Or for "sticky immersive," replace it with SYSTEM_UI_FLAG_IMMERSIVE_STICKY
         View decorView = getWindow().getDecorView();
         decorView.setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_IMMERSIVE
+                          View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
                         | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                         | View.SYSTEM_UI_FLAG_FULLSCREEN);
     }
