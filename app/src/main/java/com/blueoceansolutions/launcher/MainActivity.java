@@ -33,9 +33,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //listar();
-        if(precisaAtualizar()){
+
+        new AppUpdater(this)
+                .setUpdateFrom(UpdateFrom.GITHUB)
+                .setGitHubUserAndRepo("javiersantos", "AppUpdater")
+                .start();
+
+        /* if(precisaAtualizar()){
             abrirUpdater();
-        }
+        }*/
         txtBateria = findViewById(R.id.txtBateria);
 
     }
