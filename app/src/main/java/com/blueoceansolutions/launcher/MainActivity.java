@@ -19,18 +19,34 @@ import android.widget.TextView;
 
 import java.util.Date;
 import java.util.List;
+import android.app.DownloadManager;
+import android.net.Uri;
+import android.os.Environment;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView txtBateria;
+    private boolean isUpdate = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //listar();
-
+        if(precisaAtualizar()){
+            abrirUpdater();
+        }
         txtBateria = findViewById(R.id.txtBateria);
+
+    }
+
+    private Boolean precisaAtualizar(){
+        if(!isUpdate){
+            isUpdate = true;
+            return true;
+        }else {
+            return false;
+        }
     }
 
     @Override
@@ -74,6 +90,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void abrirValidaApps(View view) {
         Intent intent = new Intent(this, ValidaTelaApps.class);
+        startActivity(intent);
+    }
+
+    public void  abrirUpdater(){
+        Intent intent = new Intent(this, update.class);
         startActivity(intent);
     }
 
@@ -142,6 +163,4 @@ public class MainActivity extends AppCompatActivity {
         IntentFilter batteryLevelFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
         registerReceiver(batteryLevelReceiver, batteryLevelFilter);
     }
-
 }
-
